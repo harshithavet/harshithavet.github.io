@@ -9,10 +9,6 @@ This chart shows how many buildings are owned by each agency. I used the Buildin
 
 In terms of design choices, I used a bar chart to keep the visualization simple and clear for comparison. The x-axis shows the number of buildings (quantitative), and the y-axis lists each agency (nominal). I sorted the bars from largest to smallest so it’s easy to see which agencies own the most properties quickly. I didn’t apply a color scheme here, the focus is more on the numbers than differentiating between agency. Overall, the goal of this plot is to provide a quick overview of how building ownership is spread across different agencies.
 
-<div id="chart1"></div>
-<script type="text/javascript">
-  vegaEmbed('#chart1', '/assets/json/chart1_buildings.json');
-</script>
 
 ---
 
@@ -22,13 +18,9 @@ This interactive chart dissects how each agency’s buildings are spread across 
 
 In terms of design choices, I used a bar chart again because it’s an easy way to compare building counts across counties. The x-axis shows the number of buildings (quantitative) and the y-axis lists counties (nominal) instead of agency this time. I used color to distinguish each county and kept the default Altair color scheme since the focus is mainly on comparing bar lengths. The interactive dropdown is what makes this chart more interesting it lets the viewer compare and contrast any agency, like “University of Illinois” vs. “Department of Transportation,” and instantly see which counties have the most buildings for that agency. This interactivity makes it easier to explore the data in more detail and with more customization. 
 
-<div id="chart2"></div>
-<script type="text/javascript">
-  vegaEmbed('#chart2', '/assets/json/chart2_buildings.json');
-</script>
 
 ---
 
 ### Links
 - [The Data](https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_data/main/building_inventory.csv)
-- [The Analysis](https://github.com/YOUR_USERNAME/YOUR_REPO/blob/main/notebooks/buildings.ipynb)
+- [The Analysis](https://github.com/harshithavet/harshithavet.github.io/blob/master/python_notebooks/buildings.ipynb)

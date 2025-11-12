@@ -21,7 +21,7 @@ In terms of design choices, I used a bar chart to keep the visualization simple 
 
 # Chart 2
 
-<vegachart schema-url="{{ site.baseurl }}/assets/json/visualization.vl.json" style="width: 100%"></vegachart>
+<vegachart schema-url="{{ site.baseurl }}/assets/json/chart2_buildings.json" style="width: 100%"></vegachart>
 
 This chart shows how many buildings are owned by each agency. I used the Building Inventory dataset and grouped the data by “Agency Name” to track the number of buildings per agency. Grouping by agency helped transform a long, overwhelming list of individual buildings into a summarized format that shows the varying sizes of footprints by agency.
 

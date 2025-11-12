@@ -1,7 +1,6 @@
 ---
 name: Homework 5
 tools: [Python, HTML, vega-lite]
-image: assets/pngs/cars.png
 description: My submission for HW5!
 custom_js:
   - vega.min
@@ -13,39 +12,25 @@ custom_js:
 
 # Chart 1
 
-Example comes from this [great blog post right here](https://blog.4dcu.be/programming/2021/05/03/Interactive-Visualizations.html) that was also used in [our test import script](https://github.com/UIUC-iSchool-DataViz/is445_bcubcg_fall2022/blob/main/week01/test_imports_week01.ipynb).
+<vegachart schema-url="{{ site.baseurl }}/assets/json/visualization.vl.json" style="width: 100%"></vegachart>
 
-We can use a vegachart HTML tag like so:
+This chart shows how many buildings are owned by each agency. I used the Building Inventory dataset and grouped the data by “Agency Name” to track the number of buildings per agency. Grouping by agency helped transform a long, overwhelming list of individual buildings into a summarized format that shows the varying sizes of footprints by agency.
 
-```
-<vegachart schema-url="{{ site.baseurl }}/assets/json/cars.json" style="width: 100%"></vegachart>
-```
+In terms of design choices, I used a bar chart to keep the visualization simple and clear for comparison. The x-axis shows the number of buildings (quantitative), and the y-axis lists each agency (nominal). I sorted the bars from largest to smallest so it’s easy to see which agencies own the most properties quickly. I didn’t apply a color scheme here, the focus is more on the numbers than differentiating between agency. Overall, the goal of this plot is to provide a quick overview of how building ownership is spread across different agencies.
+
+
+# Chart 2
 
 <vegachart schema-url="{{ site.baseurl }}/assets/json/visualization.vl.json" style="width: 100%"></vegachart>
 
-In theory, you can also use [Jekyll hooks](https://jekyllrb.com/docs/plugins/hooks/) to do it, but I haven't figured out a way that looks nice yet.
+This chart shows how many buildings are owned by each agency. I used the Building Inventory dataset and grouped the data by “Agency Name” to track the number of buildings per agency. Grouping by agency helped transform a long, overwhelming list of individual buildings into a summarized format that shows the varying sizes of footprints by agency.
 
+In terms of design choices, I used a bar chart to keep the visualization simple and clear for comparison. The x-axis shows the number of buildings (quantitative), and the y-axis lists each agency (nominal). I sorted the bars from largest to smallest so it’s easy to see which agencies own the most properties quickly. I didn’t apply a color scheme here, the focus is more on the numbers than differentiating between agency. Overall, the goal of this plot is to provide a quick overview of how building ownership is spread across different agencies.
 
-## Search The Data & Methods
-
-Below is where we can put some links to both the data and the analysis code as buttons:
-
-```
 <div class="left">
-{% include elements/button.html link="https://github.com/vega/vega/blob/main/docs/data/cars.json" text="The Data" %}
+{% include elements/button.html link="https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_data/main/building_inventory.csv" text="The Data" %}
 </div>
 
 <div class="right">
-{% include elements/button.html link="https://blog.4dcu.be/programming/2021/05/03/Interactive-Visualizations.html" text="The Analysis" %}
-</div>
-```
-
-<!-- these are written in a combo of html and liquid --> 
-
-<div class="left">
-{% include elements/button.html link="https://github.com/vega/vega/blob/main/docs/data/cars.json" text="The Data" %}
-</div>
-
-<div class="right">
-{% include elements/button.html link="https://github.com/jnaiman/online_cv_public/blob/main/python_notebooks/test_generate_plots.ipynb" text="The Analysis" %}
+{% include elements/button.html link="https://github.com/harshithavet/harshithavet.github.io/blob/master/python_notebooks/buildings.ipynb" text="The Analysis" %}
 </div>

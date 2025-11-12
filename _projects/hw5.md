@@ -1,6 +1,6 @@
 ---
 name: Homework 5
-tools: [Python, HTML, vega-lite]
+tools: [Python, Altair, VegaLite]
 description: My submission for HW5!
 custom_js:
   - vega.min

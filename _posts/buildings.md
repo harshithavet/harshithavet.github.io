@@ -9,6 +9,7 @@ This chart shows how many buildings are owned by each agency. I used the Buildin
 
 In terms of design choices, I used a bar chart to keep the visualization simple and clear for comparison. The x-axis shows the number of buildings (quantitative), and the y-axis lists each agency (nominal). I sorted the bars from largest to smallest so it’s easy to see which agencies own the most properties quickly. I didn’t apply a color scheme here, the focus is more on the numbers than differentiating between agency. Overall, the goal of this plot is to provide a quick overview of how building ownership is spread across different agencies.
 
+<vegachart schema-url="{{harshithavet.github.io}}/assets/json/chart1.json" style="width: 100%"></vegachart>
 
 ---
 
